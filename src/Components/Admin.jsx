@@ -1,7 +1,16 @@
 const Admin = () => {
   return (
     <>
-      <h1>Admin User</h1>
+      <h1
+        style={{
+          color: "brown",
+          fontSize: 23,
+          fontWeight: "lighter",
+          margin: "1.5rem",
+        }}
+      >
+        Admin User
+      </h1>
     </>
   );
 };

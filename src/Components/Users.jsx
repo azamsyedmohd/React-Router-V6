@@ -1,4 +1,14 @@
+import { NavLink, Outlet } from "react-router-dom";
 const Users = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      textDecoration: "none",
+      fontSize: "2rem",
+      color: "brown",
+      fontStyle: "italic",
+    };
+  };
   return (
     <>
       <section
@@ -9,10 +19,29 @@ const Users = () => {
           textAlign: "center",
         }}
       >
-        <h1>User 1</h1>
-        <h1>User 2</h1>
-        <h1>User 3</h1>
-        <h1>User Admin</h1>
+        <h1>
+          <NavLink style={navLinkStyles} to="1">
+            User 1
+          </NavLink>
+        </h1>
+        <h1>
+          <NavLink style={navLinkStyles} to="2">
+            User 2
+          </NavLink>
+        </h1>
+        <h1>
+          <NavLink style={navLinkStyles} to="3">
+            User 3
+          </NavLink>
+        </h1>
+        <h1>
+          <NavLink style={navLinkStyles} to="admin">
+            User Admin
+          </NavLink>
+        </h1>
+      </section>
+      <section>
+        <Outlet />
       </section>
     </>
   );

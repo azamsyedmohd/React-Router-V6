@@ -17,7 +17,7 @@ const Products = () => {
               padding: "0.5rem",
               borderRadius: "8px",
               fontSize: 18,
-              textAlign: "left",
+              textAlign: "center",
             }}
           />
         </section>
