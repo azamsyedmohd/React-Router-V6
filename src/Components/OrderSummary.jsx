@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
-const Home = () => {
+const OrderSummary = () => {
   const navigate = useNavigate();
   return (
     <>
-      <h1 style={{ color: "green" }}>Home Page!</h1>
+      <h1>Congratulations! Order Confirmed</h1>
       <button
         onClick={() => {
-          navigate("/order-summary");
+          navigate(-1);
         }}
       >
-        Place Order
+        Go Back
       </button>
     </>
   );
 };
-export default Home;
+export default OrderSummary;
