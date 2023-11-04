@@ -1,5 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      textDecoration: "none",
+      fontSize: "2rem",
+      color: "brown",
+      fontStyle: "italic",
+    };
+  };
   return (
     <>
       <nav
@@ -8,22 +17,16 @@ const NavBar = () => {
           padding: "1rem",
           margin: 0,
           display: "flex",
-          gap: "1rem",
+          gap: "2rem",
           justifyContent: "center",
         }}
       >
-        <Link
-          style={{ color: "brown", textDecoration: "none", fontSize: "2rem" }}
-          to="/"
-        >
+        <NavLink style={navLinkStyles} to="/">
           Home
-        </Link>
-        <Link
-          style={{ color: "brown", textDecoration: "none", fontSize: "2rem" }}
-          to="/about"
-        >
+        </NavLink>
+        <NavLink style={navLinkStyles} to="/about">
           About
-        </Link>
+        </NavLink>
       </nav>
     </>
   );
