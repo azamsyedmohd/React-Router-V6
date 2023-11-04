@@ -5,7 +5,7 @@ const Users = () => {
       fontWeight: isActive ? "bold" : "normal",
       textDecoration: "none",
       fontSize: "2rem",
-      color: "brown",
+      color: "darkblue",
       fontStyle: "italic",
     };
   };

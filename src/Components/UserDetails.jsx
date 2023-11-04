@@ -6,7 +6,7 @@ const UserDetails = () => {
       <section>
         <h1
           style={{
-            color: "brown",
+            color: "darkblue",
             fontSize: 23,
             fontWeight: "lighter",
             margin: "1.5rem",
