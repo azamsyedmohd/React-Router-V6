@@ -8,7 +8,12 @@ const Products = () => {
         <input
           type="search"
           placeholder="Search Products"
-          style={{ padding: "0.5rem", borderRadius: "8px", fontSize: 18 }}
+          style={{
+            padding: "0.5rem",
+            borderRadius: "8px",
+            fontSize: 18,
+            textAlign: "left",
+          }}
         />
       </section>
       <nav style={{ display: "flex", gap: "1rem", padding: "2rem" }}>
