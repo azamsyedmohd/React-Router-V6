@@ -7,6 +7,8 @@ import Products from "./Components/Products";
 import NotMatch from "./Components/NotMatch";
 import FeaturedProducts from "./Components/FeaturedProducts";
 import NewProducts from "./Components/NewProducts";
+import Users from "./Components/Users";
+import Admin from "./Components/Admin";
 function App() {
   return (
     <>
@@ -19,6 +21,10 @@ function App() {
           <Route index element={<FeaturedProducts />} />
           <Route path="featuredProducts" element={<FeaturedProducts />} />
           <Route path="newProducts" element={<NewProducts />} />
+        </Route>
+        <Route path="/users" element={<Users />}>
+          {/* <Route path=":id" element={<UserDetails />} /> */}
+          <Route path="admin" element={<Admin />} />
         </Route>
         <Route path="*" element={<NotMatch />}></Route>
       </Routes>
