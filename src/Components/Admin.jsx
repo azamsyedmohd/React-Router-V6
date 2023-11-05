@@ -7,6 +7,7 @@ const Admin = () => {
           fontSize: 23,
           fontWeight: "lighter",
           margin: "1.5rem",
+          fontStyle: "italic",
         }}
       >
         Admin User

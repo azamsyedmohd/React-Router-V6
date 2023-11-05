@@ -7,12 +7,13 @@ const UserDetails = () => {
         <h1
           style={{
             color: "darkblue",
-            fontSize: 23,
+            fontSize: 25,
             fontWeight: "lighter",
             margin: "1.5rem",
+            fontStyle: "italic",
           }}
         >
-          Details about User-{id}
+          Details about User {id}
         </h1>
       </section>
     </>
